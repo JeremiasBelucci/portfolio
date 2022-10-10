@@ -68,7 +68,6 @@
     border-radius: 100%;
     border: 3px solid #fff;
     transition: all 300ms;
-    margin-left: 5vh;
 }
 
 .main img:hover{
@@ -266,7 +265,7 @@ h1 span{
 .about{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
+    width: 100%;
     align-items: center;
     background-color: rgb(90 49 162);
 }
@@ -439,6 +438,7 @@ h1 span{
     background-color: #3a2c8b;
     transition: all 300ms;
     margin: 1.5em;
+    border: 1px solid #252525;
 }
 
 .card h2{
@@ -449,10 +449,18 @@ h1 span{
     transform: scale(1.07);
 }
 
-.card-img{
+.card-img-doblejj{
     width: 100%;
     height: 150px;
     background-image: url(img/doblejj.jpg);
+    background-size: cover;
+    border: 0.2px solid #252525;
+}
+
+.card-img-portfolio{
+    width: 100%;
+    height: 150px;
+    background-image: url(img/portfolio.jpg);
     background-size: cover;
 }
 
@@ -636,7 +644,62 @@ h1 span{
 /* Footer */
 
 /* MEDIAS */
+@media (max-width: 1440px) {
 
-@media screen and { max-width: ;
-    
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 555px;}
+      }
+
+      h1{
+        font-size: 3em;
+      }
+
+}
+
+@media (max-width: 1220px) {
+
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 450px;}
+      }
+
+      h1{
+        font-size: 2.4em;
+      }
+}
+
+@media (max-width: 1100px) {
+
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 355px;}
+      }
+
+      h1{
+        font-size: 1.9em;
+      }
+}
+
+@media (max-width: 1000px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 600px;}
+      }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .download{
+        display: flex;
+        justify-content: center;
+    }
+
 }
