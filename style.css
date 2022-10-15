@@ -457,6 +457,14 @@ h1 span{
     border: 0.2px solid #252525;
 }
 
+.card-img-metanoia{
+    width: 100%;
+    height: 150px;
+    background-image: url(img/metanoia.jpg);
+    background-size: cover;
+    border: 0.2px solid #252525;
+}
+
 .card-img-portfolio{
     width: 100%;
     height: 150px;
